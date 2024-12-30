@@ -83,6 +83,12 @@ namespace LinqExercise
 
             //TODO: Add an employee to the end of the list without using employees.Add()
             employees = employees.Append(new Employee("Dennis", "Armstrong", 25, 15)).ToList();
+            Console.WriteLine("Updated Employee List:");
+            foreach (var employee in employees)
+            {
+                Console.WriteLine(employee.FullName);
+            }
+
 
             Console.WriteLine();
 
